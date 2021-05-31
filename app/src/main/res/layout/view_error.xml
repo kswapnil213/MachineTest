@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/errorContentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dark_to_light_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <TextView
+                style="@style/whiteMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_logo"
+                android:text="@string/app_name"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/errorIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/errorMessageTitle"
+                style="@style/whiteMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_space"
+                android:gravity="center"
+                android:padding="@dimen/medium_space" />
+
+            <TextView
+                android:id="@+id/errorMessageTextView"
+                style="@style/whiteSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large_space"
+                android:gravity="center"
+                android:padding="@dimen/medium_space" />
+
+            <Button
+                android:id="@+id/btnTryAgain"
+                style="@style/titleTextStyleMediumGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large_space"
+                android:background="@drawable/rectangle"
+                android:paddingTop="@dimen/large_space"
+                android:paddingBottom="@dimen/large_space"
+                android:paddingLeft="@dimen/double_extra_large_space"
+                android:paddingRight="@dimen/double_extra_large_space"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noConnectionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dark_to_light_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <TextView
+                style="@style/whiteMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_logo"
+                android:text="@string/app_name"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/noConnectionIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/large_space"
+                app:srcCompat="@drawable/ic_no_connection"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/connectionMessageTitle"
+                style="@style/whiteLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_space"
+                android:text="@string/no_internet_connection" />
+
+            <TextView
+                android:id="@+id/connectionMessageSubTitle"
+                style="@style/whiteSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/large_space"
+                android:layout_marginTop="@dimen/large_space"
+                android:gravity="center"
+                android:text="@string/please_check_network" />
+
+            <TextView
+                android:id="@+id/networkRetryTextView"
+                style="@style/titleTextStyleSmallWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/double_extra_large_space"
+                android:background="@drawable/button_selector"
+                android:paddingBottom="@dimen/medium_space"
+                android:paddingLeft="@dimen/double_extra_large_space"
+                android:paddingRight="@dimen/double_extra_large_space"
+                android:paddingTop="@dimen/medium_space"
+                android:text="@string/try_again" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

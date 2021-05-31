@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="no_internet_connection">Internet Error</string>
+    <string name="please_check_network">Please check your internet connection.\\nAnd try again once you got network</string>
+    <string name="try_again">Try Again</string>
+    <string name="search_hint">Search</string>
+    <string name="no_data_found">Product not available</string>
+
+    <string name="server_maintenance_title">Server Maintenance!</string>
+    <string name="server_down_message">We couldn\'t communicate with server at this point of time \n We\'ll be back soon in a while.</string>
+    <string name="timeout_title">TIMEOUT!</string>
+    <string name="timeout_message">Please check your Internet connection Speed. Please connect to a high speed network.</string>
+    <string name="unexpected_state">Unexpected State!</string>
+    <string name="something_went_wrong">Looks like something went wrong</string>
+
+</resources>
